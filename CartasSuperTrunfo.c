@@ -4,7 +4,7 @@ int main() {
 
     // Variaveis
     char estado[50];
-    char codigoCarta[10];
+    char codigoCarta[20];
     char nomeCidade[50];
     int populacao;
     float area_cidade;
@@ -12,7 +12,7 @@ int main() {
     int pontos_turistico;
 
     char estado2[50];
-    char codigoCarta2[10];
+    char codigoCarta2[20];
     char nomeCidade2[50];
     int populacao2;
     float area_cidade2;

@@ -3,16 +3,16 @@
 int main() {
 
     // Variaveis
-    char estado = 'A';
-    char codigoCarta[4];
+    char estado[50];
+    char codigoCarta[10];
     char nomeCidade[50];
     int populacao;
     float area_cidade;
     float PIB;
     int pontos_turistico;
 
-    char estado2 = 'A';
-    char codigoCarta2[4];
+    char estado2[50];
+    char codigoCarta2[10];
     char nomeCidade2[50];
     int populacao2;
     float area_cidade2;
@@ -22,14 +22,8 @@ int main() {
     printf("CADASTRE CARTAS SUPER TRUNFO!\n");
 
     //Cadastro 1° Carta    
-    printf("Digite os dados da 1° Carta\n");
-    printf("Estado (A a H) :");
-    scanf("%c", &estado);
-    
-    while (estado < 'A' || estado > 'H'){
-        printf("Estado invalido, escolha de A a H!");
-        scanf("%c", &estado);
-    }
+    printf("Digite o nome do Estado: \n");
+    fgets(estado, 50, stdin);
         
     printf("Digite codigo da carta: ");
     scanf("%s", codigoCarta);
@@ -66,16 +60,11 @@ int main() {
     getchar();
     scanf("%c", &estado2);
     
-    while (estado2 < 'A' || estado2 > 'H'){
-        printf("Estado invalido, escolha de A a H!");
-        scanf("%c", &estado2);
-    }
     
     printf("Digite codigo da carta: ");
     scanf("%s", codigoCarta2);
 
     printf("Digite nome da cidade: ");
-    getchar();
     fgets(nomeCidade2, 50, stdin);
 
     printf("Digite quantidade populacional: ");
